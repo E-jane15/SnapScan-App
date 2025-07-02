@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.janedev.SnapScanapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,15 +33,18 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#FFA629"
-        },
-        "expo-camera",
-        {
-          "cameraPermission": "Allow $(SnapScan) to access your camera to scan documents."
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "390d3c3c-6863-41d6-9c1f-884454e1e956"
+      }
     }
   }
 }
